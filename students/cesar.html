@@ -4,24 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="cesar.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <title>Document</title>
 </head>
-
 <body>
   <header>
     <a href="../index.html">Página Principal</a>
-    <h1>Cohort 09 2018 </h1>   
+    <h1 >Cohort 09 2018 </h1>   
   </header>
-  <section class="perfil">
-    <h2>César Lugo</h2>
-    <img class="img" src="cesar.jpg" width="500px" heigh="400px">
-    <p>Venezolano, 32 años, con ganas de <em>aprender</em> mucho</p>
-    <h3 class="intereses">Intereses</h3>
-      <ul>
-        <li>Meditacion</li>
-        <li>Yoga</li>
-        <li>Programación</li>
-      </ul>
-  </section>
+  <main id="site-main">
+    <section class="perfil">
+      <h2>César Lugo</h2>
+      <img class="img" src="cesar.jpg" width="500px" heigh="400px">
+      <p>Venezolano, 32 años, con ganas de <em>aprender</em> mucho</p>
+      <h3 class="intereses">Intereses</h3>
+        <ul>
+          <li>Meditacion</li>
+          <li>Yoga</li>
+          <li>Programación</li>
+        </ul>
+    </section>
+    <!--Se puede agregar class con section.experiments y el resultado es el siguiente:-->
+    <section class="experiments">
+      <!--Se puede agregar texto en un elemento ej: h2{Experimentos} y el resultado es el siguiente:-->
+      <h2>Experimentos</h2>
+    <!-- article.card.experiment>header.card-header>h3.title{My First Experiment} ... Si se usa + se arma otro elemento sibling-->
+    <article class="card experiment">
+      <header class="card-header">
+        <h3 class="title">My First Experiment</h3>
+      </header>
+    </article>
+    <div class="card-body">
+      <p><em>WIP</em></p>
+      <p>JS Basic</p>
+      <p><a href="" class="external">Miralo en Github</a></p>    
+    </div>
+    <!--footer>p{Created in: xx/xx/xxxx} -->
+    <footer>
+      <p>Created in: xx/xx/xxxx</p>
+    </footer>
+    </section>
+    <p class="clear">Ipse Lorem</p>
+    <button class="btn-1">Ocultar perfil</button>
+    <button class="btn-2">Ocultar Experimentos</button>
+  </main>
 </body>
+<script src="cesar.js"></script>
 </html>

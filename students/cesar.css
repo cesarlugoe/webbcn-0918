@@ -1,0 +1,50 @@
+/*-- DOM practice --*/
+.hidden {
+  display:none;
+}
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+section.perfil {
+  float: left;
+  width: 50%;
+  
+}
+
+section.experiments{
+  width: 50%;
+ 
+}
+
+.clear {
+  clear: both;
+}
+
+/* Typography */
+
+body {
+  font-family: roboto, sans-serif;
+}
+
+@media (min-width: 768px) {
+  section.experiments {
+    float: right;
+  }
+}
+  sections.resources {
+
+  }
+ 
